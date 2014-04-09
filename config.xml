@@ -37,7 +37,7 @@
         
         
         <gap:plugin name="org.apache.cordova.media" />
-        <gap:plugin name="org.apache.cordova.file"  />
+
 
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
