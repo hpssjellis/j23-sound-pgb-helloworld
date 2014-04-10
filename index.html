@@ -3,11 +3,6 @@
   <head>
   <meta charset="UTF-8" />
 
-  <script type="text/javascript">
-
-       monaca.viewport({width : 320});
-
-    </script>
   </head>
   <body>
     <audio src="http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3" controls></audio><br>
@@ -15,7 +10,8 @@
     <audio src="http://142.33.222.23/ellis/test/movie.mp4" controls></audio><br>
     <audio src="Kalimba.mp3" controls></audio><br>
     
-    <audio src="android_asset/www/Kalimba.mp3" controls></audio><br>
+    <audio src="file:///android_asset/www/Kalimba.mp3" controls></audio><br>
+    <audio src="file:///android_asset/Kalimba.mp3" controls></audio><br>
     
     
     
@@ -33,12 +29,28 @@
        
        
        
-       <audio id="demo" src="http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3"></audio>
+       <audio id="demo" src="http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3"></audio><br>
 <div>
-  <button onclick="document.getElementById('demo').play()">Play the Audio</button>
-  <button onclick="document.getElementById('demo').pause()">Pause the Audio</button>
-  <button onclick="document.getElementById('demo').volume+=0.1">Increase Volume</button>
-  <button onclick="document.getElementById('demo').volume-=0.1">Decrease Volume</button>
+  <button onclick="document.getElementById('demo').play()">Play the Audio</button><br>
+  <button onclick="document.getElementById('demo').pause()">Pause the Audio</button><br>
+  <button onclick="document.getElementById('demo').volume+=0.1">Increase Volume</button><br>
+  <button onclick="document.getElementById('demo').volume-=0.1">Decrease Volume</button><br>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+           
+       <audio id="demo2" src="http://142.33.222.23/ellis/test/test.mp3"></audio><br>
+<div>
+  <button onclick="document.getElementById('demo2').play()">Play the Audio</button><br>
+  <button onclick="document.getElementById('demo2').pause()">Pause the Audio</button><br>
+  <button onclick="document.getElementById('demo2').volume+=0.1">Increase Volume</button><br>
+  <button onclick="document.getElementById('demo2').volume-=0.1">Decrease Volume</button><br>
 </div>
     
     
