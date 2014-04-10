@@ -1,0 +1,35 @@
+
+
+<script>
+function playAudio(url) {
+    // Play the audio file at url
+    var my_media = new Media(url,
+        // success callback
+        function() {
+            console.log("playAudio():Audio Success");
+        },
+        // error callback
+        function(err) {
+            console.log("playAudio():Audio Error: "+err);
+    });
+
+    // Play audio
+    my_media.play();
+}
+
+<script>
+
+
+<a href="#" class="btn large" onclick="playAudio('Kalimba.mp3');">Play Audio</a>
+<a href="#" class="btn large" onclick="playAudio('/android_asset/Kalimba.mp3');">Play Audio</a>
+<a href="#" class="btn large" onclick="playAudio('/android_asset/www/Kalimba.mp3');">Play Audio</a>
+<a href="#" class="btn large" onclick="playAudio('http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3');">Play Audio</a>
+
+
+
+
+
+<a href="#" class="btn large" onclick="playAudio('http://142.33.222.23/ellis/test/test.mp3');">Play Audio</a>
+
+<a href="#" class="btn large" onclick="playAudio('Kalimba.mp3');">Play Audio</a>
+
