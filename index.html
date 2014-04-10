@@ -6,7 +6,8 @@
     <script>
         function playAudio(src) {
             if (device.platform == 'Android') {
-                src = '/android_asset/www/' + src;
+               // src = '/android_asset/www/' + src;
+                src = '/android_asset/' + src;
             }
  
             var media = new Media(src, success, error_error);
