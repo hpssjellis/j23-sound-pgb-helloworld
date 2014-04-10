@@ -8,20 +8,12 @@
     <preference name="phonegap-version" value="3.3.0" />
     <!-- versionCode is optional and Android only -->
 
-    <name>My App</name>
-
-    <description>
-        Application mobile 
-    </description>
-
-    <author href="https://www.website.fr" email="support@website.fr">
-        Henri Labarre 
-    </author>
-
-    <gap:platform name="ios" />
     <gap:platform name="android" />
 
     <gap:plugin name="org.apache.cordova.core.media" />
     <access origin="http://ibeat.org" subdomains="true" /> 
+    
+    
+    
 
 </widget>
