@@ -70,7 +70,7 @@
    
 
   
-  <!--   <access origin="http://ibeat.org" subdomains="true" /> -->
+    <access origin="http://ibeat.org" subdomains="true" /> 
    
   <!-- <access origin="*"  browserOnly="true"  />  -->
   <!-- <access origin="anyOldSite.com" browserOnly="true" /> -->
