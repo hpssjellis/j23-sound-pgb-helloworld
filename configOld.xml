@@ -36,7 +36,10 @@
         
         
         
-       <gap:plugin name="org.apache.cordova.media" /> 
+      
+       
+    <gap:plugin name="org.apache.cordova.media" />
+    <gap:plugin name="org.apache.cordova.core.Device"/>
         
    <!--  <plugin name="Media" value="org.apache.cordova.AudioHandler"/> -->
 
