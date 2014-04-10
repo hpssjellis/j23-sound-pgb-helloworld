@@ -12,7 +12,8 @@
 
     <gap:plugin name="org.apache.cordova.core.media" />
     <access origin="http://ibeat.org" subdomains="true" /> 
-    
+     < access origin="http://127.0.0.1*" />
+      < access origin="*" />
     
     
 
