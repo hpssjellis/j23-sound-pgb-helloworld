@@ -29,7 +29,7 @@ function myPauseAll(){
 
 <input type=button value="pause" style="font-size:25px;" onclick="{
    document.getElementById('myAudio1').pause()
-}">
+}"><br>
 
 <input type=button value="Volume up" style="font-size:25px;" onclick="{
    document.getElementById('myAudio1').volume+=0.2
@@ -37,7 +37,23 @@ function myPauseAll(){
 
 <input type=button value="volume down" style="font-size:25px;" onclick="{
    document.getElementById('myAudio1').volume-=0.2
-}"><br><br>
+}">
+
+<input type=button value="forward 5s" style="font-size:25px;" onclick="{
+   document.getElementById('myAudio1')..currentTime += 5.0;
+}">
+
+
+<input type=button value="back 5s" style="font-size:25px;" onclick="{
+   document.getElementById('myAudio1')..currentTime -= 5.0;
+}">
+
+
+
+
+
+
+<br><br>
 
 
 
