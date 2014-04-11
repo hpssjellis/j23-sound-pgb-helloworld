@@ -7,6 +7,20 @@
    document.getElementById('myAudio1').play()
 }">
 
+<input type=button value="pause" style="font-size:25px;" onclick="{
+   document.getElementById('myAudio1').pause()
+}">
+
+<input type=button value="Volume up" style="font-size:25px;" onclick="{
+   document.getElementById('myAudio1').volume+=0.2
+}">
+
+<input type=button value="volume down" style="font-size:25px;" onclick="{
+   document.getElementById('myAudio1').volume-=0.2
+}">
+
+
+
 
 
 
@@ -16,7 +30,25 @@
    document.getElementById('myAudio2').play()
 }">
 
+<input type=button value="pause" style="font-size:25px;" onclick="{
+   document.getElementById('myAudio2').pause()
+}">
 
+
+
+
+
+<input type=text value="http://142.33.222.23/ellis/test/test.mp3" id="myText1">
+<audio id="myAudio3" src="http://142.33.222.23/ellis/test/test.mp3"></audio>
+
+<input type=button value="play" style="font-size:25px;" onclick="{
+   document.getElementById('myAudio3').src =    document.getElementById('myText1').value
+   document.getElementById('myAudio3').play()
+}">
+
+<input type=button value="pause" style="font-size:25px;" onclick="{
+   document.getElementById('myAudio3').pause()
+}">
 
 
 
