@@ -16,8 +16,10 @@
     <gap:plugin name="com.rjfun.cordova.plugin.lowlatencyaudio"  />
     
     
-    <access origin="http://ibeat.org" subdomains="true" /> 
-    <access origin="http://127.0.0.1*" />
+  <!--  <access origin="http://ibeat.org" subdomains="true" /> 
+    <access origin="http://127.0.0.1*" /> -->
+    
+    <access origin="*" />
       
     
     
