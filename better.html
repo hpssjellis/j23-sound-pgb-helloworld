@@ -1,0 +1,30 @@
+<audio id="my1"src="PianoScale.mp3"></audio>
+
+<input type=button value="play" style="font-size:25px;" onclick="{
+
+   document.getElementById('my1').play()
+}">
+<br>
+
+
+<audio id="my2" src="http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3"></audio>
+
+
+<input type=button value="play" style="font-size:25px;" onclick="{
+
+   document.getElementById('my2').play()
+}">
+<br>
+
+
+<input type=text value="http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3" id="myText1" 
+
+style="font-size:25px;">
+<audio id="my3" src="http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3"></audio>
+
+
+<input type=button value="play" style="font-size:25px;" onclick="{
+alert(document.getElementById('myText1').value)
+   document.getElementById('my3').src = document.getElementById('myText1').value
+   document.getElementById('my3').play()
+}">
