@@ -1,0 +1,232 @@
+ <!DOCTYPE html> 
+ 
+ <html>
+ <body>
+ 
+ 
+ 
+ 
+   <script type="text/javascript" charset="utf-8">
+
+        // Wait for Cordova to load
+        //
+        document.addEventListener("deviceready", onDeviceReady, false);
+
+        // Cordova is ready
+        //
+        function onDeviceReady() {
+         //   playAudio("http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3");   // do not auto load media file
+        }
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+        // onSuccess Callback
+        //
+        function onSuccess() {
+            console.log("playAudio():Audio Success");
+        }
+
+        // onError Callback 
+        //
+        function onError(error) {
+            alert('code: '    + error.code    + '\n' + 
+                  'message: ' + error.message + '\n');
+        }
+
+ 
+
+        </script>
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+        <title>Media Example</title>
+
+
+<font size=40>
+See conclusions at the bottom of the page. This code works for phonegap client but I have troubles with phonegap build.<br>
+
+ This first set is to test polyphonic. at the stop method and the release methods.<br>
+
+<input type=button value="create media url http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3" onclick="{document.my_media2 = new Media('http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3', onSuccess, onError);}">
+<input type=button value="create media url http://audio.ibeat.org/content/enoe/enoe_-_Freezing_Cool_Session.mp3     /android_asset/www/test.mp3" onclick="{document.my_media2 = new Media('http://audio.ibeat.org/content/enoe/enoe_-_Freezing_Cool_Session.mp3', onSuccess, onError);}">
+<input type=button value="play media url" onclick="{document.my_media2.play()}">
+<input type=button value="pause media url" onclick="{document.my_media2.pause()}">
+<input type=button value="release media url" onclick="{document.my_media2.release()}">
+<input type=button value="test bad stop" onclick="{document.my_media2.stop()}">
+<input type=button value="test my release1" onclick="{document.my_media2 = null}">
+<input type=button value="test my release2" onclick="{document.my_media2 = ''}">
+<br><br><br><br>
+
+ 
+
+<input type=button value="create media 3     /android_asset/www/test.mp3" onclick="{document.my_media3 = new Media('/android_asset/www/Kalimpa.mp3', onSuccess, onError);}">
+<input type=button value="play media url" onclick="{document.my_media3.play()}">
+<input type=button value="pause media url" onclick="{document.my_media3.pause()}">
+<input type=button value="release media url" onclick="{document.my_media3.release()}">
+<br><br><br><br>
+
+ 
+
+<input type=button value="create media 4 Download/c5.mp3" onclick="{document.my_media4 = new Media('Download/c5.mp3', onSuccess, onError);}">
+<input type=button value="play media path" onclick="{document.my_media4.play()}">
+<input type=button value="pause media path" onclick="{document.my_media4.pause()}">
+<input type=button value="release media path" onclick="{document.my_media4.release()}">
+<br><br><br><br>
+
+ 
+
+
+<input type=button value="create media 5 path Download/sDefn1.wav" onclick="{document.my_media5 = new Media('Download/sDefn1.wav', onSuccess, onError);}">
+<input type=button value="play media sdcard" onclick="{document.my_media5.play()}">
+<input type=button value="pause media sdcard" onclick="{document.my_media5.pause()}">
+<input type=button value="release media sdcard" onclick="{document.my_media5.release()}">
+<br><br><br><br>
+
+ 
+
+<input type=button value="create media 6 /sdcard/Download/sDefn1.wav" onclick="{document.my_media6 = new Media('/sdcard/Download/sDefn1.wav', onSuccess, onError);}">
+<input type=button value="play media url" onclick="{document.my_media6.play()}">
+<input type=button value="pause media url" onclick="{document.my_media6.pause()}">
+<input type=button value="release media url" onclick="{document.my_media6.release()}">
+<br><br><br><br>
+
+
+<input type=text id="myText1" value="http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3">
+<input type=button value="create media url 7 same as top" onclick="{document.my_media7 = new Media(document.all.myText1.value, onSuccess, onError);}">
+<input type=button value="play media url" onclick="{document.my_media7.play()}">
+<input type=button value="pause media url" onclick="{document.my_media7.pause()}">
+<input type=button value="release media url" onclick="{document.my_media7.release()}">
+<br><br><br><br>
+
+ 
+
+<input type=button value="create media 8    media/01 Call Me Maybe.m4a " onclick="{document.my_media8 = new Media('media/01 Call Me Maybe.m4a', onSuccess, onError);}">
+<input type=button value="play media url" onclick="{document.my_media8.play()}">
+<input type=button value="pause media url" onclick="{document.my_media8.pause()}">
+<input type=button value="release media url" onclick="{document.my_media8.release()}">
+<br><br><br><br>
+
+
+<input type=button value="create media 9    http://142.33.222.23/ellis/phpmidi/soundmanager/pianoMp3/5Fsharp.mp3 " onclick="{document.my_media9 = new Media('http://142.33.222.23/ellis/phpmidi/soundmanager/pianoMp3/5Fsharp.mp3', onSuccess, onError);}">
+<input type=button value="play media url" onclick="{document.my_media9.play()}">
+<input type=button value="pause media url" onclick="{document.my_media9.pause()}">
+<input type=button value="release media url" onclick="{document.my_media9.release()}">
+<br><br><br><br>
+
+ 
+
+<input type=button value="create recording myRecording.mp3" onclick="{document.my_media10 = new Media('myRecording.mp3', onSuccess, onError);}">
+<input type=button value="start recording" onclick="{document.my_media10.startRecord();}">
+<input type=button value="stop recording" onclick="{document.my_media10.stopRecord()}">
+<input type=button value="play recording" onclick="{document.my_media10.play()}">
+<input type=button value="pause recording" onclick="{document.my_media10.pause()}">
+<input type=button value="test bad stop" onclick="{document.my_media2.stop()}">
+<input type=button value="release recording" onclick="{document.my_media10.release()}">
+<br><br><br><br>
+
+
+<input type=button value="create recording /sdcard/Download/myRecording.mp3" onclick="{document.my_media11 = new Media('/sdcard/Download/myRecording.mp3', onSuccess, onError);}">
+<input type=button value="start recording" onclick="{document.my_media11.startRecord();}">
+<input type=button value="stop recording" onclick="{document.my_media11.stopRecord()}">
+<input type=button value="play recording" onclick="{document.my_media11.play()}">
+<input type=button value="pause recording" onclick="{document.my_media11.pause()}">
+<input type=button value="test bad stop" onclick="{document.my_media2.stop()}">
+<input type=button value="release recording" onclick="{document.my_media11.release()}">
+<br><br><br><br>
+
+Phonegap audio has a few quirks on the android system. (At least on a samsung galaxy s3 cell phone and phonegap 2.2.0)<br><br>
+
+The .stop() function does not work at all and calls an error in phonegap version 2.2 Seems to work better in phonegap version 2.3<br><br>
+
+The .release() function seems to do what the stop function should do, but it does not delete the media object. This is proven because
+ the song can be played again even after release by calling .play() again.<br><br>
+
+On Android systems it seems that      .wav      .m4a (iTunes format)  and .mp3 all play 
+
+You can load a .mp3 from the web, from the assets/www folder, from the phones media or Download folders. 
+(Other folders may have permissions issues. Have not yet tested) <br>
+
+All can be polyphoninc (play at the same time). <br><br>
+
+All do not seem to have the 5 second limit that I kept reading about<br><br>
+
+Button activation time seems a bit slow, might be able to be improved using javascript.<br><br>
+
+Some .mp3's seem to have a bit of a shudder at the start of the sound the first time. Seems fine after that. <br><br>
+
+Recordings must be on the root of the sdcard using phonegap version 2.3. 
+I did manage to get a recording saved to the Download/ directory but only with phonegap 2.2 or was it 2.0?
+ Note: both relative and absolute calling for directories works for loading songs, only in phongap 2.2 for recording songs.
+The default directory is the sdcard. <br>
+example Both of these work<br>
+
+
+/sdcard/Download/sDefn1.wav<br>
+Download/sDefn1.wav<br><br>
+
+You must have the backslash for the assets,www folder to include a sound file in your app. Example <br>
+/android_asset/www/test.mp3<br>
+Url's work fine, but expect some lag time based on your network.<br>
+http://audio.ibeat.org/content/enoe/enoe_-_Freezing_Cool_Session.mp3<br><br>
+
+Generally sound seems to work on Android, but the examples on the phonegap documentation page do not work well!
+<hr>
+
+Using phonegap 2.4rc I have a few different issues.<br><br>
+The record feature seems to work but .release must be pushed before .play works.<br><br>
+Like phonegap version 2.3 the .stop button works better, but we can only record to the root of the sdcard. <br><br>
+Hope people find this useful.
+ 
+
+ 
+
+
+
+
+A practice link 
+<input type=button value="Go to Google" onclick="document.location = 'http://www.google.ca'">
+
+ 
+
+
+</font>
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+    </body>
+</html>
+
