@@ -13,7 +13,7 @@
     <gap:plugin name="org.apache.cordova.core.media" /> -
     
     
-   <!--  <gap:plugin name="com.rjfun.cordova.plugin.lowlatencyaudio"  /> ->
+    <gap:plugin name="com.rjfun.cordova.plugin.lowlatencyaudio"  /> 
     
     
   <!--  <access origin="http://ibeat.org" subdomains="true" /> 
