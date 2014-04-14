@@ -2,24 +2,24 @@
 
 
 
-
 <input type=button value="play" style="font-size:25px;" onclick="{
 
 
     var my_media = new Media('http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3',
         // success callback
         function () {
-            console.log('playAudio():Audio Success'');
+            console.log('playAudio():Audio Success');
         },
       // error callback
         function (err) {
-            console.log('playAudio():Audio Error: ' + err);
+            alert('playAudio():Audio Error: ' + err);
         }
     );
     // Play audio
-    my_media.play();
+   // my_media.play();
 
 
 
-  // document.getElementById('my_media').play()
+  // document.getElementById('my_media').pause()
+   document.getElementById('my_media').play()
 }">
