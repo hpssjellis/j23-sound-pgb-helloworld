@@ -31,13 +31,6 @@ function myPauseAll(){
    document.getElementById('myAudio1').pause()
 }"><br>
 
-<input type=button value="Volume up" style="font-size:25px;" onclick="{
-   document.getElementById('myAudio1').volume+=0.2
-}">
-
-<input type=button value="volume down" style="font-size:25px;" onclick="{
-   document.getElementById('myAudio1').volume-=0.2
-}">
 
 <input type=button value="forward 5s" style="font-size:25px;" onclick="{
    document.getElementById('myAudio1').currentTime += 5.0;
@@ -80,6 +73,14 @@ function myPauseAll(){
 <br><br>
 
 
+
+
+
+
+
+//from any internet location or sdcard location
+
+
 <input type=text value="http://142.33.222.23/ellis/test/test.mp3" id="myText1" style="font-size:25px;">
 <audio id="myAudio3" src="http://142.33.222.23/ellis/test/test.mp3"></audio>
 
@@ -97,16 +98,45 @@ function myPauseAll(){
 <input type=button value="pause" style="font-size:25px;" onclick="{
    document.getElementById('myAudio3').pause()
 }">
+<br><br>
 
-<input type=button value="duration" style="font-size:25px;" onclick="{
-    document.getElementById('myOut1').innerHTML= document.getElementById('myAudio3').length
+
+
+
+
+
+
+<br><br>
+
+
+
+
+// from your phones sdcard
+
+<audio id="myAudio4" src="/sdcard/myRecording.mp3"></audio>
+
+<input type=button value="load" style="font-size:25px;" onclick="{
+   document.getElementById('myAudio2').play()
+   document.getElementById('myAudio2').pause()
 }">
-<div id="myOut1"> length here </div></div>
+
+<input type=button value="play" style="font-size:25px;" onclick="{
+   myPauseAll()
+   document.getElementById('myAudio4').play()
+}">
+
+<input type=button value="pause" style="font-size:25px;" onclick="{
+   document.getElementById('myAudio4').pause()
+}">
 
 
-<input type=button value="poly" style="font-size:25px;" onclick="{location='poly.html'}">
-<input type=button value="poly sortof" style="font-size:25px;" onclick="{location='better.html'}">
+<br><br>
 
-<input type=button value="media" style="font-size:25px;" onclick="{location='media1.html'}">
+
+
+
+
+
+
 
 
