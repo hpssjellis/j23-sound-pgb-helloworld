@@ -1,18 +1,21 @@
 j23-sound-pgb-helloworld
 ========================
 
-Sound in phonegap may not yet be fully html5 compliant. This is a test to see what used to work and what still does work.
 
 
-April 9, 2014. Strange but for URL sounds html5 seems to work with my samsung galaxy S3, but none- of my old phoneagp media stuff seems to work. Having no luck accessing the sdcard or local sounds.
-
-Will keep trying
+April 15, 2014. NOT VERY HAPPY. Using Phonegap Build on an Android phone I Can not get polyphonic sound like I can using the Chrome browser. I can get non-polyphonic mp3 sound, from both the sdcard and the internet using HTML5 audio tags and javascript.
 
 
+Can not load anything from the local android_asset/www folder. Also can not record audio. 
 
 
-Presently can not get sounds working. got them going fine on phonegap 2.4 having no luck at the moment with 3.4 
-April 8, 2013. Will try again later.
+Using Phonegap Client I can do most of the audio things I wish to do. That code is not posted here.
+
+
+
+
+
+
 
 
 
