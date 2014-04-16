@@ -51,7 +51,7 @@
         <title>Media Example</title>
 
 
-<font size=8>
+
 See conclusions at the bottom of the page<br>
 
 
@@ -75,7 +75,7 @@ See conclusions at the bottom of the page<br>
 <input type=button value="Release Memory"   onclick="{document.my_media2.release();document.my_media2 = null;}">
 <br><br><br><br>
 
-
+Use the following to try local, or URL based files. Also try many different types. .mp3 .wav.au4 should all work.<br>
 <input type=text id="mySrc1" size=70 value="http://142.33.222.23/ellis/phpmidi/soundmanager/pianoMp3/5Fsharp.mp3"> 
 <input type=button value="Create media 3 textField" onclick="{
      document.my_media3 = new Media(document.getElementById('mySrc1').value, onSuccess, onError);}">
@@ -91,7 +91,7 @@ See conclusions at the bottom of the page<br>
 
 
 
-<input type=text id="mySrc2" size=70 value="myRecording.mp3"> 
+<input type=text id="mySrc2" size=70 value="Download/myRecording.mp3"> 
 <input type=button value="create recording myRecording.mp3" onclick="{
     document.my_media9 = new Media(document.getElementById('mySrc2').value, onSuccess, onError);}">
 <input type=button value="start recording"   onclick="{document.my_media9.startRecord();}">
@@ -105,7 +105,7 @@ See conclusions at the bottom of the page<br>
 
 
 
-<input type=button value="create recording myRecording.mp3" onclick="{
+<input type=button value="create recordingon sdcard root using only  myRecording.mp3" onclick="{
     document.my_media10 = new Media('myRecording.mp3', onSuccess, onError);}">
 <input type=button value="start recording"   onclick="{document.my_media10.startRecord();}">
 <input type=button value="stop recording"    onclick="{document.my_media10.stopRecord();document.my_media10.release();}">
@@ -121,7 +121,7 @@ Using phonegap 3.4 things are different than with phonegap 2.0
 
 
 
-<h2 >Phonegap audio has a few quirks on the android system. (At least on a samsung galaxy s3 cell phone and phonegap 2.0.0)<br><br>
+<h3 >Phonegap audio has a few quirks on the android system. (At least on a samsung galaxy s3 cell phone and phonegap 2.0.0)<br><br>
 
 
 
@@ -165,12 +165,11 @@ The record feature seems to work but .release must be activated before .play wor
 
 
 
-</h2>
+</h3>
 
 
 
 
-</font>
 
 
 
