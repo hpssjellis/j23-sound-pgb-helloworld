@@ -23,7 +23,7 @@ function myPauseAll(){
 <br>
 <hr>
 <br>
-Load a url using an HTML5 audio tag.  http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3
+Load a url using an HTML5 audio tag.  http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3<br>
 
 <audio id="myAudio1" src="http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3"></audio>
 
@@ -41,7 +41,8 @@ Load a url using an HTML5 audio tag.  http://audio.ibeat.org/content/p1rj1s/p1rj
 }"><br>
 
 <input type=button value="stop" style="font-size:25px;" onclick="{
-   document.getElementById('myAudio1').stop()
+   document.getElementById('myAudio1').pause()
+   document.getElementById('myAudio1').currentTime = 0;
 }"><br>
 
 
@@ -64,7 +65,7 @@ Load a url using an HTML5 audio tag.  http://audio.ibeat.org/content/p1rj1s/p1rj
 
 
 
-Load another url http://142.33.222.23/ellis/test/test.mp3
+Load another url http://142.33.222.23/ellis/test/test.mp3<br>
 
 <audio id="myAudio2" src="http://142.33.222.23/ellis/test/test.mp3"></audio>
 
@@ -83,7 +84,8 @@ Load another url http://142.33.222.23/ellis/test/test.mp3
 }">
 
 <input type=button value="stop" style="font-size:25px;" onclick="{
-   document.getElementById('myAudio2').stop()
+   document.getElementById('myAudio2').pause()
+   document.getElementById('myAudio2').currentTime = 0;
 }">
 
 <br><br>
@@ -116,7 +118,8 @@ Load from any internet location or sdcard location. Try different file formats t
 }">
 
 <input type=button value="stop" style="font-size:25px;" onclick="{
-   document.getElementById('myAudio3').stop()
+   document.getElementById('myAudio3').pause()
+   document.getElementById('myAudio3').currentTime = 0;
 }">
 <br><br>
 
@@ -131,7 +134,7 @@ Load from any internet location or sdcard location. Try different file formats t
 
 
 
- from your phones sdcard at the location /sdcard/myRecording.mp3. Note: a sound file must be at that location.
+ from your phones sdcard at the location /sdcard/myRecording.mp3. Note: a sound file must be at that location.<br>
 
 <audio id="myAudio4" src="/sdcard/myRecording.mp3"></audio>
 
@@ -150,7 +153,8 @@ Load from any internet location or sdcard location. Try different file formats t
 }">
 
 <input type=button value="stop" style="font-size:25px;" onclick="{
-   document.getElementById('myAudio4').stop()
+   document.getElementById('myAudio4').pause()
+   document.getElementById('myAudio4').currentTime = 0;
 }">
 
 <br><br>
