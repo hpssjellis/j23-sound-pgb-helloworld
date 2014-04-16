@@ -3,7 +3,7 @@
   <head>
     <title>Device Properties Example</title>
 
-    <script type="text/javascript" charset="utf-8" src="cordova-x.x.x.js"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8">
 
     // Wait for device API libraries to load
@@ -13,7 +13,7 @@
     // Record audio
     //
     function recordAudio() {
-        var src = "myrecording.amr";
+        var src = "/sdcard/myStuff.amr";
         var mediaRec = new Media(src, onSuccess, onError);
 
         // Record audio
@@ -40,7 +40,7 @@
     // onSuccess Callback
     //
     function onSuccess() {
-        console.log("recordAudio():Audio Success");
+        alert("recordAudio():Audio Success");
     }
 
     // onError Callback
