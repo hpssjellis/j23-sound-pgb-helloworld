@@ -51,7 +51,7 @@
         <title>Media Example</title>
 
 
-<font size=14>
+<font size=8>
 See conclusions at the bottom of the page<br>
 
 
@@ -91,8 +91,8 @@ See conclusions at the bottom of the page<br>
 
 
 
-<input type=text id="mySrc2" size=70 value="/sdcard/myRecording.mp3"> 
-<input type=button value="create recording /sdcard/myRecording.mp3" onclick="{
+<input type=text id="mySrc2" size=70 value="myRecording.mp3"> 
+<input type=button value="create recording myRecording.mp3" onclick="{
     document.my_media9 = new Media(document.getElementById('mySrc2').value, onSuccess, onError);}">
 <input type=button value="start recording"   onclick="{document.my_media9.startRecord();}">
 <input type=button value="stop recording"    onclick="{document.my_media9.stopRecord();}">
@@ -105,8 +105,8 @@ See conclusions at the bottom of the page<br>
 
 
 
-<input type=button value="create recording /sdcard/myRecording.mp3" onclick="{
-    document.my_media10 = new Media('/sdcard/myRecording.mp3', onSuccess, onError);}">
+<input type=button value="create recording myRecording.mp3" onclick="{
+    document.my_media10 = new Media('myRecording.mp3', onSuccess, onError);}">
 <input type=button value="start recording"   onclick="{document.my_media10.startRecord();}">
 <input type=button value="stop recording"    onclick="{document.my_media10.stopRecord();}">
 <input type=button value="prep recording"    onclick="{document.my_media10.release();}">
@@ -123,22 +123,22 @@ Using phonegap 3.4 things are different than with phonegap 2.0
 
 <h2 >Phonegap audio has a few quirks on the android system. (At least on a samsung galaxy s3 cell phone and phonegap 2.0.0)<br><br>
 
-The .stop() function does not work at all and calls an error<br><br>
 
-The .release() function seems to do what the stop function should do, but it does not delete the media object. This is proved because
- the song can be played again even after release by calling .play() again.<br><br>
-on Android systems it seems that      .wav      .m4a (iTunes format)  and .mp3 all play 
 
-You can load a .mp3 from the web, from the assets/www folder, from the phones media or Download folders. 
-(Other folders may have permissions issues. Have not yet tested) <br>
+The .release() function does not completely release the object. I have set the object to "null" so that it can't be played again.
+
+On Android systems it seems that      .wav      .m4a (iTunes format)  and .mp3 all play 
+
+You can load an .mp3 from the web, from the android_assets/www folder, from the phones media or Download folders. 
+ <br>
 
 All can be polyphoninc (play at the same time). <br><br>
 
 All do not seem to have the 5 second limit that I kept reading about<br><br>
 
-Button activation time seems a bit slow, might be able to be improved using javascript.<br><br>
+Button activation time seems a bit slow, Pre-loading by activating .play and the ,pause seems to speed up the buttons..<br><br>
 
-Some .mp3's seem to have a bit of a shudder at the start of the sound the first time. Seems fine after that. <br><br>
+
 
 Recordings must be on the root or Download folder of the sdcard. Note: both relative and absolute calling work<br>
 example Both of these work<br>
@@ -148,10 +148,8 @@ Download/myrecord.mp3 <br>
 Generally sound seems to work on Android, but the examples on the phonegap documentation page do not work well!
 <hr>
 
-Using phonegap 2.4rc I have a few different issues.<br><br>
+Using phonegap 3. I have a few different issues.<br><br>
 The record feature seems to work but .release must be pushed before .play works.<br><br>
-/android-asset/www/ does not work. All other features work same as phonegap version 2.0.0<br><br>
-unfortunately /android-asset/www/ is the most important so I think we have an issue.<br><br>
 
 
 
