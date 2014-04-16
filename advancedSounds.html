@@ -91,7 +91,7 @@ See conclusions at the bottom of the page<br>
 
 
 
-<input type=text id="mySrc2" size=70 value="sdcard/myRecording.mp3"> 
+<input type=text id="mySrc2" size=70 value="sdcard0/myRecording.mp3"> 
 <input type=button value="create recording sdcard/myRecording.mp3" onclick="{
     document.my_media9 = new Media(document.getElementById('mySrc2').value, onSuccess, onError);}">
 <input type=button value="start recording"   onclick="{document.my_media9.startRecord();}">
@@ -105,7 +105,7 @@ See conclusions at the bottom of the page<br>
 
 
 
-<input type=button value="create recording sdcard/myRecording.mp3" onclick="{
+<input type=button value="create recording sdcard0/myRecording.mp3" onclick="{
     document.my_media10 = new Media('sdcard/myRecording.mp3', onSuccess, onError);}">
 <input type=button value="start recording"   onclick="{document.my_media10.startRecord();}">
 <input type=button value="stop recording"    onclick="{document.my_media10.stopRecord();}">
