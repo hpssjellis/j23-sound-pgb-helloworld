@@ -95,8 +95,8 @@ See conclusions at the bottom of the page<br>
 <input type=button value="create recording myRecording.mp3" onclick="{
     document.my_media9 = new Media(document.getElementById('mySrc2').value, onSuccess, onError);}">
 <input type=button value="start recording"   onclick="{document.my_media9.startRecord();}">
-<input type=button value="stop recording"    onclick="{document.my_media9.stopRecord();}">
-<input type=button value="prep recording"    onclick="{document.my_media9.release();}">
+<input type=button value="stop recording"    onclick="{document.my_media9.stopRecord();document.my_media9.release();}">
+<!--<input type=button value="prep recording"    onclick="{document.my_media9.release();}"> -->
 <input type=button value="play recording"    onclick="{document.my_media9.play();}">
 <input type=button value="stop recording"    onclick="{document.my_media9.stop();}">
 <input type=button value="release recording" onclick="{document.my_media9.release();document.my_media9 = null;}">
@@ -108,8 +108,8 @@ See conclusions at the bottom of the page<br>
 <input type=button value="create recording myRecording.mp3" onclick="{
     document.my_media10 = new Media('myRecording.mp3', onSuccess, onError);}">
 <input type=button value="start recording"   onclick="{document.my_media10.startRecord();}">
-<input type=button value="stop recording"    onclick="{document.my_media10.stopRecord();}">
-<input type=button value="prep recording"    onclick="{document.my_media10.release();}">
+<input type=button value="stop recording"    onclick="{document.my_media10.stopRecord();document.my_media10.release();}">
+<!--<input type=button value="prep recording"    onclick="{document.my_media10.release();}"> -->
 <input type=button value="play recording"    onclick="{document.my_media10.play();}">
 <input type=button value="stop recording"    onclick="{document.my_media10.stop();}">
 <input type=button value="release recording" onclick="{document.my_media10.release();document.my_media10 = null;}">
