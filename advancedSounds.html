@@ -31,7 +31,7 @@
         // onError Callback 
         //
         function onError(error) {
-            alert('code: '    + error.code  );
+            alert('Error Code: '    + error.code  );
         }
 
 
@@ -51,7 +51,7 @@
         <title>Media Example</title>
 
 
-<font size=40>
+<font size=25>
 See conclusions at the bottom of the page<br>
 
 
@@ -95,21 +95,23 @@ See conclusions at the bottom of the page<br>
 <input type=button value="create recording sdcard/myRecording.mp3" onclick="{
     document.my_media9 = new Media(document.getElementById('mySrc2').value, onSuccess, onError);}">
 <input type=button value="start recording"   onclick="{document.my_media9.startRecord();}">
-<input type=button value="stop recording"    onclick="{document.my_media9.stopRecord();document.my_media9.release();}">
-<input type=button value="play recording"    onclick="{document.my_media9.play()}">
-<input type=button value="stop recording"    onclick="{document.my_media9.stop()}">
+<input type=button value="stop recording"    onclick="{document.my_media9.stopRecord();}">
+<input type=button value="prep recording"    onclick="{document.my_media9.release();}">
+<input type=button value="play recording"    onclick="{document.my_media9.play();}">
+<input type=button value="stop recording"    onclick="{document.my_media9.stop();}">
 <input type=button value="release recording" onclick="{document.my_media9.release();document.my_media9 = null;}">
 <br><br><br><br>
 
 
 
 
-<input type=button value="create recording /sdcard/myRecording.mp3" onclick="{
+<input type=button value="create recording sdcard/myRecording.mp3" onclick="{
     document.my_media10 = new Media('sdcard/myRecording.mp3', onSuccess, onError);}">
 <input type=button value="start recording"   onclick="{document.my_media10.startRecord();}">
-<input type=button value="stop recording"    onclick="{document.my_media10.stopRecord();document.my_media10.release();}">
-<input type=button value="play recording"    onclick="{document.my_media10.play()}">
-<input type=button value="stop recording"    onclick="{document.my_media10.stop()}">
+<input type=button value="stop recording"    onclick="{document.my_media10.stopRecord();}">
+<input type=button value="prep recording"    onclick="{document.my_media10.release();}">
+<input type=button value="play recording"    onclick="{document.my_media10.play();}">
+<input type=button value="stop recording"    onclick="{document.my_media10.stop();}">
 <input type=button value="release recording" onclick="{document.my_media10.release();document.my_media10 = null;}">
 <br><br><br><br>
 
@@ -154,10 +156,6 @@ unfortunately /android-asset/www/ is the most important so I think we have an is
 
 
 </h2>
-
-
-A practice link 
-<input type=button value="Go to Google" onclick="document.location = 'http://www.google.ca'">
 
 
 
