@@ -105,7 +105,7 @@ See conclusions at the bottom of the page<br>
 
 
 <input type=button value="create recording /sdcard/myRecording.mp3" onclick="{
-    document.my_media10 = new Media('/sdcard/myRecording.mp3', onSuccess, onError);}">
+    document.my_media10 = new Media('sdcard/myRecording.mp3', onSuccess, onError);}">
 <input type=button value="start recording"   onclick="{document.my_media10.startRecord();}">
 <input type=button value="stop recording"    onclick="{document.my_media10.stopRecord();document.my_media10.release();}">
 <input type=button value="play recording"    onclick="{document.my_media10.play()}">
