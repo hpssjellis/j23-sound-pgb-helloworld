@@ -22,15 +22,10 @@
 
 
 
-
-
-
-
-
         // onSuccess Callback
         //
         function onSuccess() {
-            alert("playAudio():Audio Success");
+           // alert("playAudio():Audio Success");
         }
 
         // onError Callback 
@@ -67,7 +62,7 @@ See conclusions at the bottom of the page<br>
 <input type=button value=".pause media url" onclick="{document.my_media2.pause()}">
 <input type=button value=".release does not seem to work. Just stops the song" onclick="{document.my_media2.release()}">
 <input type=button value="test .stop" onclick="{document.my_media2.stop()}">
-<input type=button value="test my release null" onclick="{document.my_media2.stop();document.my_media2 = null;}">
+<input type=button value="test my release stop and set media to null" onclick="{document.my_media2.stop();document.my_media2 = null;}">
 <br><br><br><br>
 
 
@@ -75,7 +70,9 @@ See conclusions at the bottom of the page<br>
 <input type=button value="create media 3     /android_asset/www/PianoScale.mp3" onclick="{document.my_media3 = new Media('/android_asset/www/PianoScale.mp3', onSuccess, onError);}">
 <input type=button value="play media url" onclick="{document.my_media3.play()}">
 <input type=button value="pause media url" onclick="{document.my_media3.pause()}">
-<input type=button value="release media url" onclick="{document.my_media3.release()}">
+<input type=button value="test .stop" onclick="{document.my_media3.stop()}">
+<input type=button value="test my release stop and set media to null" onclick="{document.my_media3.stop();document.my_media3 = null;}">
+
 <br><br><br><br>
 
 
