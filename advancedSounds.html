@@ -68,11 +68,11 @@ See conclusions at the bottom of the page<br>
 
 <input type=button value="Create media 2 url /android_asset/www/PianoScale.mp3" onclick="{
      document.my_media2 = new Media('/android_asset/www/PianoScale.mp3', onSuccess, onError);}">
-<input type=button value="Pre-Load" onclick="{document.my_media2.play();document.my_media2.pause();}">
-<input type=button value="Play media url" onclick="{document.my_media2.play()}">
-<input type=button value="Pause media url" onclick="{document.my_media2.pause()}">
-<input type=button value="Stop" onclick="{document.my_media2.stop()}">
-<input type=button value="Release Memory" onclick="{document.my_media2.release();document.my_media2 = null;}">
+<input type=button value="Pre-Load"         onclick="{document.my_media2.play();document.my_media2.pause();}">
+<input type=button value="Play media url"   onclick="{document.my_media2.play()}">
+<input type=button value="Pause media url"  onclick="{document.my_media2.pause()}">
+<input type=button value="Stop"             onclick="{document.my_media2.stop()}">
+<input type=button value="Release Memory"   onclick="{document.my_media2.release();document.my_media2 = null;}">
 <br><br><br><br>
 
 
@@ -93,19 +93,19 @@ See conclusions at the bottom of the page<br>
 
 <input type=text id="mySrc2" size=70 value="sdcard/myRecording.mp3"> 
 <input type=button value="create recording sdcard/myRecording.mp3" onclick="{
-    document.my_media9 = new Media(document.getElementById('mySrc1').value, onSuccess, onError);}">
+    document.my_media9 = new Media(document.getElementById('mySrc2').value, onSuccess, onError);}">
 <input type=button value="start recording" onclick="{document.my_media9.startRecord();}">
-<input type=button value="stop recording" onclick="{document.my_media9.stopRecord();document.my_media10.release();}">
+<input type=button value="stop recording" onclick="{document.my_media9.stopRecord();document.my_media9.release();}">
 <input type=button value="play recording" onclick="{document.my_media9.play()}">
 <input type=button value="stop recording" onclick="{document.my_media9.stop()}">
-<input type=button value="release recording" onclick="{document.my_media10.release();document.my_media9 = null;}">
+<input type=button value="release recording" onclick="{document.my_media9.release();document.my_media9 = null;}">
 <br><br><br><br>
 
 
 
 
-<input type=button value="create recording sdcard/myRecording.mp3" onclick="{
-    document.my_media10 = new Media('sdcard/myRecording.mp3', onSuccess, onError);}">
+<input type=button value="create recording /sdcard/myRecording.mp3" onclick="{
+    document.my_media10 = new Media('/sdcard/myRecording.mp3', onSuccess, onError);}">
 <input type=button value="start recording" onclick="{document.my_media10.startRecord();}">
 <input type=button value="stop recording" onclick="{document.my_media10.stopRecord();document.my_media10.release();}">
 <input type=button value="play recording" onclick="{document.my_media10.play()}">
