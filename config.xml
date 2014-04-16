@@ -10,10 +10,10 @@
 
 
 
-    <gap:plugin name="org.apache.cordova.core.media" /> -
+    <gap:plugin name="org.apache.cordova.core.media" /> 
     
     
-    <gap:plugin name="com.rjfun.cordova.plugin.lowlatencyaudio"  /> 
+  <!--  <gap:plugin name="com.rjfun.cordova.plugin.lowlatencyaudio"  /> -->
     
     
   <!--  <access origin="http://ibeat.org" subdomains="true" /> 
@@ -22,7 +22,7 @@
     <access origin="*" />
     <access origin="http://127.0.0.1*"/>
       
-    <access origin="/android_asset/www" subdomains="true"     />
+  <!--  <access origin="/android_asset/www" subdomains="true"     />  -->
     
     
 
