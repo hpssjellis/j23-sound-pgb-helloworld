@@ -140,16 +140,28 @@ Button activation time seems a bit slow, Pre-loading by activating .play and the
 
 
 
-Recordings must be on the root or Download folder of the sdcard. Note: both relative and absolute calling work<br>
-example Both of these work<br>
+Recordings must be on the root or Download folder of the sdcard. Note: both relative and absolute calling work for playback<br>
+example Both of these work on playback<br>
 Download/myrecord.mp3 <br>
 /sdcard/Download/myRecord.mp3<br>
+and<br>
+myRecord.mp3
+/sdcard/myRecord.mp3<br>
+
+
+BUT when recording only 
+myrecord.mp3
+Download/myRecord.mp3
+<br>
+work adding the /sdcard makes it not record.
+
+
 
 Generally sound seems to work on Android, but the examples on the phonegap documentation page do not work well!
 <hr>
 
 Using phonegap 3. I have a few different issues.<br><br>
-The record feature seems to work but .release must be pushed before .play works.<br><br>
+The record feature seems to work but .release must be activated before .play works.<br><br>
 
 
 
