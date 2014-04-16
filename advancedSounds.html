@@ -56,90 +56,61 @@ See conclusions at the bottom of the page<br>
 
 
 
-<input type=button value="create media url http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3" onclick="{document.my_media2 = new Media('http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3', onSuccess, onError);}">
+<input type=button value="Create media 1 url http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3" onclick="{
+     document.my_media1 = new Media('http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3', onSuccess, onError);}">
+<input type=button value="Pre-Load" onclick="{document.my_media1.play();document.my_media1.pause();}">
+<input type=button value="Play media url" onclick="{document.my_media1.play()}">
+<input type=button value="Pause media url" onclick="{document.my_media1.pause()}">
+<input type=button value="Stop" onclick="{document.my_media1.stop()}">
+<input type=button value="Release Memory" onclick="{document.my_media1.release();document.my_media1 = null;}">
+<br><br><br><br>
+
+
+<input type=button value="Create media 2 url /android_asset/www/PianoScale.mp3" onclick="{
+     document.my_media2 = new Media('/android_asset/www/PianoScale.mp3', onSuccess, onError);}">
 <input type=button value="Pre-Load" onclick="{document.my_media2.play();document.my_media2.pause();}">
-<input type=button value=".play media url" onclick="{document.my_media2.play()}">
-<input type=button value=".pause media url" onclick="{document.my_media2.pause()}">
-<input type=button value=".release does not seem to work. Just stops the song" onclick="{document.my_media2.release()}">
-<input type=button value="test .stop" onclick="{document.my_media2.stop()}">
-<input type=button value="test my release stop and set media to null" onclick="{document.my_media2.stop();document.my_media2 = null;}">
+<input type=button value="Play media url" onclick="{document.my_media2.play()}">
+<input type=button value="Pause media url" onclick="{document.my_media2.pause()}">
+<input type=button value="Stop" onclick="{document.my_media2.stop()}">
+<input type=button value="Release Memory" onclick="{document.my_media2.release();document.my_media2 = null;}">
 <br><br><br><br>
 
 
-
-<input type=button value="create media 3     /android_asset/www/PianoScale.mp3" onclick="{document.my_media3 = new Media('/android_asset/www/PianoScale.mp3', onSuccess, onError);}">
-<input type=button value="play media url" onclick="{document.my_media3.play()}">
-<input type=button value="pause media url" onclick="{document.my_media3.pause()}">
-<input type=button value="test .stop" onclick="{document.my_media3.stop()}">
-<input type=button value="test my release stop and set media to null" onclick="{document.my_media3.stop();document.my_media3 = null;}">
-
-<br><br><br><br>
-
-
-
-<input type=button value="create media 4 Download/c5.mp3" onclick="{document.my_media4 = new Media('/android_asset/www/Kalimba.mp3', onSuccess, onError);}">
-<input type=button value="play media path" onclick="{document.my_media4.play()}">
-<input type=button value="pause media path" onclick="{document.my_media4.pause()}">
-<input type=button value="release media path" onclick="{document.my_media4.release()}">
+<input type=text id="mySrc1" size=70 value="http://142.33.222.23/ellis/phpmidi/soundmanager/pianoMp3/5Fsharp.mp3"> 
+<input type=button value="Create media 3 textField" onclick="{
+     document.my_media3 = new Media(document.getElementById('mySrc1').value, onSuccess, onError);}">
+<input type=button value="Pre-Load" onclick="{document.my_media3.play();document.my_media3.pause();}">
+<input type=button value="Play media url" onclick="{document.my_media3.play()}">
+<input type=button value="Pause media url" onclick="{document.my_media3.pause()}">
+<input type=button value="Stop" onclick="{document.my_media3.stop()}">
+<input type=button value="Release Memory" onclick="{document.my_media3.release();document.my_media3 = null;}">
 <br><br><br><br>
 
 
 
 
-<input type=button value="create media 5 path Download/sDefn1.wav" onclick="{document.my_media5 = new Media('/android_asset/www/myWave.wav', onSuccess, onError);}">
-<input type=button value="play media sdcard" onclick="{document.my_media5.play()}">
-<input type=button value="pause media sdcard" onclick="{document.my_media5.pause()}">
-<input type=button value="release media sdcard" onclick="{document.my_media5.release()}">
+
+
+<input type=text id="mySrc2" size=70 value="sdcard/myRecording.mp3"> 
+<input type=button value="create recording sdcard/myRecording.mp3" onclick="{
+    document.my_media9 = new Media(document.getElementById('mySrc1').value, onSuccess, onError);}">
+<input type=button value="start recording" onclick="{document.my_media9.startRecord();}">
+<input type=button value="stop recording" onclick="{document.my_media9.stopRecord()}">
+<input type=button value="play recording" onclick="{document.my_media9.play()}">
+<input type=button value="stop recording" onclick="{document.my_media9.stop()}">
+<input type=button value="release recording" onclick="{document.my_media10.release();document.my_media9 = null;}">
 <br><br><br><br>
 
 
 
-<input type=button value="create media 6 /sdcard/Download/sDefn1.wav" onclick="{document.my_media6 = new Media('/sdcard/Download/sDefn1.wav', onSuccess, onError);}">
-<input type=button value="play media url" onclick="{document.my_media6.play()}">
-<input type=button value="pause media url" onclick="{document.my_media6.pause()}">
-<input type=button value="release media url" onclick="{document.my_media6.release()}">
-<br><br><br><br>
 
-
-<input type=text id="myText1" value="http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3">
-<input type=button value="create media url 7 same as top" onclick="{document.my_media7 = new Media(document.all.myText1.value, onSuccess, onError);}">
-<input type=button value="play media url" onclick="{document.my_media7.play()}">
-<input type=button value="pause media url" onclick="{document.my_media7.pause()}">
-<input type=button value="release media url" onclick="{document.my_media7.release()}">
-<br><br><br><br>
-
-
-
-<input type=button value="create media 8    media/01 Call Me Maybe.m4a " onclick="{document.my_media8 = new Media('media/01 Call Me Maybe.m4a', onSuccess, onError);}">
-<input type=button value="play media url" onclick="{document.my_media8.play()}">
-<input type=button value="pause media url" onclick="{document.my_media8.pause()}">
-<input type=button value="release media url" onclick="{document.my_media8.release()}">
-<br><br><br><br>
-
-
-<input type=button value="create media 9    http://142.33.222.23/ellis/phpmidi/soundmanager/pianoMp3/5Fsharp.mp3 " onclick="{document.my_media9 = new Media('http://142.33.222.23/ellis/phpmidi/soundmanager/pianoMp3/5Fsharp.mp3', onSuccess, onError);}">
-<input type=button value="play media url" onclick="{document.my_media9.play()}">
-<input type=button value="pause media url" onclick="{document.my_media9.pause()}">
-<input type=button value="release media url" onclick="{document.my_media9.release()}">
-<br><br><br><br>
-
-
-
-<input type=button value="create recording myRecording.mp3" onclick="{document.my_media10 = new Media('myRecording.mp3', onSuccess, onError);}">
+<input type=button value="create recording sdcard/myRecording.mp3" onclick="{
+    document.my_media10 = new Media('sdcard/myRecording.mp3', onSuccess, onError);}">
 <input type=button value="start recording" onclick="{document.my_media10.startRecord();}">
 <input type=button value="stop recording" onclick="{document.my_media10.stopRecord()}">
 <input type=button value="play recording" onclick="{document.my_media10.play()}">
-<input type=button value="pause recording" onclick="{document.my_media10.pause()}">
-<input type=button value="release recording" onclick="{document.my_media10.release()}">
-<br><br><br><br>
-
-
-<input type=button value="create recording /sdcard/Download/myRecording.mp3" onclick="{document.my_media11 = new Media('/sdcard/Download/myRecording.mp3', onSuccess, onError);}">
-<input type=button value="start recording" onclick="{document.my_media11.startRecord();}">
-<input type=button value="stop recording" onclick="{document.my_media11.stopRecord()}">
-<input type=button value="play recording" onclick="{document.my_media11.play()}">
-<input type=button value="pause recording" onclick="{document.my_media11.pause()}">
-<input type=button value="release recording" onclick="{document.my_media11.release()}">
+<input type=button value="stop recording" onclick="{document.my_media10.stop()}">
+<input type=button value="release recording" onclick="{document.my_media10.release();document.my_media10 = null;}">
 <br><br><br><br>
 
 
