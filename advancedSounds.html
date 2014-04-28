@@ -75,8 +75,8 @@ See conclusions at the bottom of the page<br>
 <input type=button value="Release Memory"   onclick="{document.my_media2.release();document.my_media2 = null;}">
 <br><br><br><br>
 
-Use the following to try local, or URL based files. Also try many different types. .mp3  .wav   .m4a should all work.<br>
-<input type=text id="mySrc1" size=70 value="http://142.33.222.23/ellis/phpmidi/soundmanager/pianoMp3/5Fsharp.mp3"> 
+Use the following to try local, or URL based files.   http://yourwebsite/yourfolder/test.mp3 Also try many different types. .mp3  .wav   .m4a should all work.<br>
+<input type=text id="mySrc1" size=70 value="http://yourwebsite/yourfolder/test.mp3"> 
 <input type=button value="Create media 3 textField" onclick="{
      document.my_media3 = new Media(document.getElementById('mySrc1').value, onSuccess, onError);}">
 <input type=button value="Pre-Load"         onclick="{document.my_media3.play();document.my_media3.pause();}">
