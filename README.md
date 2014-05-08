@@ -29,7 +29,7 @@ may 7, 2014 trying to get recording working for iOS by setting the path using
 var path = (device.platform == "Android") ? "/android_asset/www/audio/" : "/audio/";
 
 
-
+Note: Recently when testing on google chrome found .m4a sounds working fine using html5 sudio
 
 
 ************************************************************************************************************
