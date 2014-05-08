@@ -24,7 +24,9 @@ The index.html code can be used on win8 Chrome. It does not work on many other p
 
 
 
+may 7, 2014 trying to get recording working for iOS by setting the path using
 
+var path = (device.platform == "Android") ? "/android_asset/www/audio/" : "/audio/";
 
 
 
