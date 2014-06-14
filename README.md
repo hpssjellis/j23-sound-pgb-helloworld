@@ -4,6 +4,9 @@ j23-sound-pgb-helloworld
 June 14, 2014  Just found out that the advanced stuff is not working. Not sure what I changed. I will look into it.
 
 
+May 8, 2014 Created an interesting problem. Using wifi and the Phonegap Developer App I updated the code to work on both Android and iOS, but frogot to test it on build. Well I had not included the device plugin in my config file. So the advanced file has not been working since May.
+
+
 April 16, 2014 Finally Success!
 
 
