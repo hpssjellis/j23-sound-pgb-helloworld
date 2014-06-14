@@ -1,6 +1,9 @@
 j23-sound-pgb-helloworld
 ========================
 
+June 14, 2014  Just found out that the advanced stuff is not working. Not sure what I changed. I will look into it.
+
+
 April 16, 2014 Finally Success!
 
 
