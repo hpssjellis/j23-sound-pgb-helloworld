@@ -17,7 +17,7 @@
 
        // set up file path for android or iOS by testing for Android. need device plugin for this to work.
       // var document.path = (device.platform == "Android") ? "/android_asset/www/" : "/";
-
+      // not working here since I did not test for device ready. put it in a button
 
 
 
@@ -57,7 +57,7 @@ See conclusions at the bottom of the page<br>
 
 
 
-<input type=text  value="Set path for both android and ios"onclick="{
+<input type=button  value="Set path for both android and ios" onclick="{
       // The following is cool but not a beginner if statement
       // var document.path = (device.platform == "Android") ? "/android_asset/www/" : "/";
       
@@ -67,7 +67,7 @@ See conclusions at the bottom of the page<br>
    } else {
       document.path = "/"   // This works on where my recordings were saved on my iOS device
    }
-
+  alert('Document.path is now set to '+document.path )
 }">
 
 
