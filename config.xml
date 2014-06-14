@@ -11,6 +11,8 @@
 
 
     <gap:plugin name="org.apache.cordova.core.media" /> 
+    <gap:plugin name="org.apache.cordova.device" />
+    <gap:plugin name="org.apache.cordova.device-motion" />
     
     
   <!--  <gap:plugin name="com.rjfun.cordova.plugin.lowlatencyaudio"  /> -->
